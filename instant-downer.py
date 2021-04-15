@@ -14,7 +14,7 @@ os.system("clear")
 ascii_banner = pyfiglet.figlet_format("Instant BotNet")
 print(ascii_banner)
 
-ip = raw_input("Ip Adress: ")
+ip = input("Ip Adress: ")
 port = input("Port: ")
 times = input("Time: ")
 timeout = time.time() + times
