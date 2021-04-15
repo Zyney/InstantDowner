@@ -32,7 +32,7 @@ print(Fore.RED + """ /$$$$$$                       /$$                          
 | $$  \ $$| $$  | $$  | $$ /$$| $$  | $$| $$_____/  | $$ /$$        
 | $$$$$$$/|  $$$$$$/  |  $$$$/| $$  | $$|  $$$$$$$  |  $$$$/        
 |_______/  \______/    \___/  |__/  |__/ \_______/   \___/         """ + Style.RESET_ALL)
-ip = raw_input("Ip Adress: ")
+ip = raw_input(color.BOLD + "Ip Adress: " + color.END)
 port = input("Port: ")
 times = input("Time: ")
 timeout = time.time() + times
