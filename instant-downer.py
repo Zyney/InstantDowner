@@ -13,7 +13,6 @@ bytes = random._urandom(4000)
 os.system("clear")
 ascii_banner = pyfiglet.figlet_format("Instant BotNet", font="epic")
 print(ascii_banner)
-
 ip = input("Ip Adress: ")
 port = input("Port: ")
 times = input("Time: ")
