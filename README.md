@@ -14,3 +14,5 @@ Use Script :
 5) Enter A DDoS Port | Default: 80
 
 6) Enter Time For DDoS Attack | Default: 300
+
+/!\ Education script /!\
